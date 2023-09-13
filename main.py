@@ -9,13 +9,27 @@ import polars as pl
 import matplotlib.pyplot as plt
 #var=1;var=2
 
-@click.command("add")
-@click.argument("a", type=int)
-@click.argument("b", type=int)
-def add_cli(a, b):
-    click.echo(add(a, b))
+def read_file(file_name):
+    # create the data summary
+    df = pl.read_csv(file_name)
+    return df
+
+def summary(file_name):
+    df=read_file(file_name)
+    return df.describe()
+
+def summary_plot(file_name):
+    df=read_file(file_name)
+    plt.hist(df['IMDB_Rating'])
+    plt.show()
+
+# @click.command("add")
+# @click.argument("a", type=int)
+# @click.argument("b", type=int)
+# def add_cli(a, b):
+#     click.echo(add(a, b))
 
 
-if __name__ == "__main__":
-    # pylint: disable=no-value-for-parameter
-    add_cli()
+# if __name__ == "__main__":
+#     # pylint: disable=no-value-for-parameter
+
