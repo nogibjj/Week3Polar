@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 def test_read_file():
     df=read_file('imdb_top_1000.csv')
     # assert not df.empty()
-    assert len(read_file('imdb_top_1000.csv'))==1000
+    assert len(df)==1000
 
 def test_describe():
     describe=read_file('imdb_top_1000.csv')
