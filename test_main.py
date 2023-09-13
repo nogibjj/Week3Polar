@@ -30,9 +30,10 @@ def test_describe():
     assert describe['IMDB_Rating']['max']==9.3
 
 def test_graph():
-    df=read_file('imdb_top_1000.csv')
-    plt.hist(df['IMDB_Rating'])
-    plt.show()
+    # df=read_file('imdb_top_1000.csv')
+    # plt.hist(df['IMDB_Rating'])
+    # plt.show()
+    summary_plot('imdb_top_1000.csv')
 
 
 
