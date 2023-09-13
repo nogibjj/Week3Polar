@@ -11,7 +11,7 @@ Test goes here
 
 from main import read_file, summary, summary_plot
 import matplotlib.pyplot as plt
-import polars as pl
+#import polars as pl
 
 "Test the dataset summary"
 
