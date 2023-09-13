@@ -2,8 +2,8 @@
 Main cli or app entry point
 """
 
-from mylib.calculator import add
-import click
+# from mylib.calculator import add
+# import click
 
 import polars as pl
 import matplotlib.pyplot as plt
