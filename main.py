@@ -13,11 +13,13 @@ import matplotlib.pyplot as plt
 
 def read_file(file_name):
     # create the data summary
-    df = pl.read_csv(file_name)
+    df = pl.read_csv(file_name, dtype = {"Gross": pl.Int64})
+    # print(df.head())
     return df
 
 def summary(file_name):
     df=read_file(file_name)
+    print(df.describe())
     return df.describe()
 
 def summary_plot(file_name):
