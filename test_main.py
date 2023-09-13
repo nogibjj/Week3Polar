@@ -17,7 +17,7 @@ from main import read_file, summary, summary_plot
 
 
 def test_read_file():
-    df=read_file('Top_1000_IMDb_movies_New_version.csv')
+    df=read_file('imdb_top_1000.csv')
     # assert not df.empty()
     assert len(df)==1000
 
@@ -25,15 +25,15 @@ def test_describe():
     # describe=read_file('imdb_top_1000.csv')
     # assert describe['IMDB_Rating'].mean()==7.949299999999999
     # assert describe['IMDB_Rating'].max()==9.3
-    describe=summary('Top_1000_IMDb_movies_New_version.csv')
-    assert describe['IMDB_Rating']['mean']==7.949299999999999
-    assert describe['IMDB_Rating']['max']==9.3
+    describe=summary('imdb_top_1000.csv')
+    assert describe[["describe", "IMDB_Rating"]][2, 1]==7.949299999999999
+    assert describe[["describe", "IMDB_Rating"]][8, 1]==9.3
 
 def test_graph():
     # df=read_file('imdb_top_1000.csv')
     # plt.hist(df['IMDB_Rating'])
     # plt.show()
-    summary_plot('Top_1000_IMDb_movies_New_version.csv')
+    summary_plot('imdb_top_1000.csv')
 
 
 

@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 def read_file(file_name):
     # create the data summary
-    df = pl.read_csv(file_name, dtype = {"Gross": pl.Int64})
+    df = pl.read_csv(file_name, ignore_errors=True)
     # print(df.head())
     return df
 
