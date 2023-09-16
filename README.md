@@ -1,37 +1,20 @@
-[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
-## Template for Python projects with RUFF linter
+## Goal
+This is for Data Engineering class mini project 3. The goal of this project is to do a data analysis project with Polars.
 
-![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
+## Steps
+1. Use the ruff template provided by Professor Gift. Modifiy below items:
+    1. Adding Python packages in requirements (Polars, matplotlib)
+2. Update the main file to do the data analysis
+    1. Read a csv file using Polars
+    2. Create a summary of the data
+    3. Create a plot for the data
+3. Update the test_main file to ensure the functions in main file is working
 
+## Summary of the Dataset
+The dataset 'imdb_top_1000.csv' is downloaded from Kaggle https://www.kaggle.com/datasets/juanarchidonaahijado/imdb-top-1000 . The dataset contains 16 columns and 1,000 rows. 
 
+### Summary of Data Analysis
+<img width="946" alt="Screen Shot 2023-09-16 at 6 15 51 PM" src="https://github.com/nogibjj/Week3Polar/assets/47194238/1c490efe-26c3-4330-a313-5ed2574f074d">
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
-
-Things included are:
-
-* `Makefile`
-
-* `Pytest`
-
-* `pandas`
-
-* `Ruff`:  
-
-Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff here](https://github.com/astral-sh/ruff).
-
-* `Dockerfile`
-
-* `GitHub copilot`
-
-* `jupyter` and `ipython` 
-
-* A base set of libraries for devops and web
-
-* `githubactions`
-
-## References
-
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
-
-
-
+### Visualization of Data Analysis
+<img width="582" alt="Screen Shot 2023-09-16 at 6 34 50 PM" src="https://github.com/nogibjj/Week3Polar/assets/47194238/d58721d1-869c-44ab-bc47-7d08a8c24a6b">
