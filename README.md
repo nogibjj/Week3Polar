@@ -18,3 +18,9 @@ The dataset 'imdb_top_1000.csv' is downloaded from Kaggle https://www.kaggle.com
 
 ### Visualization of Data Analysis
 <img width="582" alt="Screen Shot 2023-09-16 at 6 34 50 PM" src="https://github.com/nogibjj/Week3Polar/assets/47194238/d58721d1-869c-44ab-bc47-7d08a8c24a6b">
+
+## Test Results
+<img width="961" alt="Test Result" src="https://github.com/nogibjj/Week3Polar/assets/47194238/101b5590-59ac-4dbb-8428-89d1734e9f3f">
+
+## Status Badge
+[![CI](https://github.com/nogibjj/Week3Polar/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Week3Polar/actions/workflows/cicd.yml)
